@@ -5,7 +5,7 @@ A script on how to get up and running with Webtask.io and Twilio. Simply input y
 
 If you need to install Webtask, [here are some directions](https://webtask.io/cli).
 
-If you want to get started with this particular script do the following:
+If you want to get started with this particular script copy snow.js and do the following:
 
  1. Install Webtask
  2. Add your Twilio Sid and authToken to snow.js
