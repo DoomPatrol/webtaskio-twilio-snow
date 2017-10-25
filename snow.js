@@ -24,7 +24,7 @@ app.post('/message', (req, res) => {
       body: 'Welcome to epic snow. Please type the mountain you want to shred at. Options are: ' +
       'Vail, Beaver Creek, Afton Alps, Breckenridge, Keystone, or Kirkwood.',
       to: respNum,
-      from: '+13123130932'
+      from: 'YOUR NUMBER'
     }).then((message) => console.log(message.sid));
     res.writeHead(200, { 'Content-Type': 'text/xml' });
     res.end();
@@ -44,7 +44,7 @@ app.post('/message', (req, res) => {
             ' inches of new snow. Get out there and ride!',
             mediaUrl: mountain.logoURLString,
             to: respNum,
-            from: '+13123130932'
+            from: 'YOUR NUMBER'
           }).then((message) => console.log(message.sid));
           res.writeHead(200, { 'Content-Type': 'text/xml' });
           res.end();
@@ -54,7 +54,7 @@ app.post('/message', (req, res) => {
         sms.messages.create({
           body: 'We were not able to find your mountain. Could you try again with exact spelling please?',
           to: respNum,
-          from: '+13123130932'
+          from: 'YOUR NUMBER'
         }).then((message) => console.log(message.sid));
         res.writeHead(200, { 'Content-Type': 'text/xml' });
         res.end();
